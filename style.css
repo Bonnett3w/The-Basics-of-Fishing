@@ -1,0 +1,438 @@
+* {
+  font-family: Arial;
+}
+
+body{
+background-color: lightgrey;
+}
+
+/*// Navbar CSS //*/
+
+#navbar {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  background-color: cadetblue;
+  width: 100%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+#navtitle {
+  justify-self: center;
+  width: fit-content;
+  color: navy;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+#prevbut {
+  justify-self: center;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0px;
+}
+
+#nextbut {
+  justify-self: center;
+  width: fit-content;
+  grid-column: 3;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0px;
+}
+
+#navbut {
+  justify-self: center;
+  width: fit-content;
+  justify-content: center;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0px;
+}
+
+#dark-mode-but {
+  justify-self: center;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#navmenu {
+    position: absolute;
+    left:0px;
+    text-align: center;
+    background-color: white;
+    list-style: none;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 5px;
+}
+
+#swimmingfish {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  bottom: 50%;
+  left: 0px;
+  z-index: 1;
+}
+
+
+/*Dark Mode Across Every Page*/
+
+.dark-mode-body{
+  background-color: black;
+  z-index: 0;
+}
+
+.dark-mode-navbar{
+  background-color: rgb(40,40,40) !important;
+}
+
+.dark-mode-navtitle{
+  color: white !important;
+}
+
+.dark-mode-navmenu{
+  position: absolute;
+  left:0px;
+  text-align: center;
+  color: white !important;
+  background-color: rgb(60,60,60) !important;
+  list-style: none;
+  border: 1px solid black;
+  margin: 0px;
+  padding: 5px;
+}
+
+
+
+/* Homepage CSS */
+
+#homepage{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  z-index: 2;
+}
+
+
+
+#homepage_header {
+  color: navy;
+  font-size: 350%;
+  display: block;
+  width: fit-content;
+  position: relative;
+  left: 25%;
+}
+
+.left_side {
+  color: black;
+  font-size: 120%;
+  margin-left: 10%;
+  margin-top: 2%;
+  width: 40%;
+}
+
+.right_side {
+  border-color: navy;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  font-size: 120%;
+  background-color: rgba(100,140,200,0.6);
+  padding: 2%;
+  width: 75%;
+  position: relative;
+  top: 5%;
+  margin-bottom: 5%;
+
+}
+
+.def{
+  width: 75%;
+}
+
+
+/*/// Homepage Dark Mode  ////*/
+
+
+.dark-mode-homepage-header{
+  color: white !important;
+}
+
+.dark-mode-left-side{
+  color: white !important;
+}
+
+.dark-mode-right-side{
+  background-color: rgb(80,80,80) !important;
+  color: white !important;
+  border-color: rgb(60,60,60) !important;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+}
+
+.dark-mode-funfact {
+  color: white !important;
+  background-color: rgb(60,60,60) !important;
+}
+
+/*equipment CSS*/
+
+#equipment {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: navy;
+  font-size: 200%;
+  z-index: 2;
+}
+
+#tacklepage{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+  z-index: 2;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 5%;
+  background-color: rgba(100,140,200,0.6);
+  padding: 5%;
+  align-items: center;
+  z-index: 2;
+}
+
+.equipmenth{
+  font-size: 150%;
+  background-color: cadetblue;
+  padding: 5%;
+  width: fit-content;
+}
+
+.tackle_description{
+  display: flex-inline;
+  align-items: flex-start;
+  position: relative;
+  top: 2%;
+}
+
+
+
+
+
+/*/// Tackle Page Dark Mode  ////*/
+
+.dark-mode-equipment{
+  color: white !important;
+}
+
+.dark-mode-container{
+  background-color: rgb(80,80,80);
+}
+
+.dark-mode-equipmenth{
+  background-color: rgb(60,60,60);
+  color: white;
+}
+
+.dark-mode-description{
+  color: white;
+}
+
+
+
+/* Location Page CSS */
+
+#bodies{
+  color: navy;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  z-index: 3;
+}
+
+#locationpage{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5%;
+  z-index: 3;
+}
+
+.title_and_image{
+  margin-left: 10%;
+  z-index: 3;
+
+}
+
+.watername{
+  display: flex;
+  font-size: x-large;
+  background-color: rgba(100,140,200,0.6);
+  border-color: navy;
+  border-style: solid;
+  border-radius: 10px;
+  justify-content: center;
+  z-index: 3;
+}
+
+.bodydescription{
+  font-size: 150%;
+  display: flex;
+  background-color: rgba(100,140,200,0.6);
+  border-color: navy;
+  border-style: solid;
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 60px;
+  margin-top: 100px;
+  margin-left: 100px;
+  align-content: center;
+  z-index: 3;
+}
+
+
+/*/// Location Page Dark Mode  ////*/
+
+
+.dark-mode-bodies{
+  color: white !important;
+}
+
+.dark-mode-watername{
+  background-color: rgb(80,80,80) !important;
+  color: white !important;
+  border-color: rgb(60,60,60) !important;
+}
+
+.dark-mode-bodydescription{
+  background-color: rgb(80,80,80) !important;
+  color: white !important;
+  border-color: rgb(60,60,60) !important;
+}
+
+/* Species Page CSS */
+
+
+h1,h2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  z-index: 3;
+}
+
+#speciesheader {
+  color: navy;
+}
+
+#locations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  z-index: 3;
+}
+
+.loccol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+}
+
+
+.Fresh {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px 100px;
+  position: relative;
+  z-index: 3;
+}
+
+.Salt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px 100px;
+  z-index: 3;
+}
+
+.fish_description {
+  position: absolute;
+  color: red;
+  font-size: large;
+  font-weight: bold;
+  bottom: 10px;
+  left: 50%;
+  background: rgba(255,255,255,0.7);
+  padding: 2px 8px;
+  border-radius: 6px;
+  z-index: 9999;
+}
+
+#bass,
+#pike,
+#carp,
+#sunfish, 
+#crappie,
+#catfish,
+#shark,
+#tuna,
+#striper,
+#flounder,
+#swordfish,
+#mahi {
+  position: relative;
+  z-index: 3;
+}
+
+
+.hidden-bass,
+.hidden-pike,
+.hidden-carp,
+.hidden-sunfish,
+.hidden-crappie,
+.hidden-catfish,
+.hidden-shark,
+.hidden-tuna,
+.hidden-striper,
+.hidden-flounder,
+.hidden-swordfish,
+.hidden-mahi {
+  display: none !important;
+}
+
+
+/*/// Species Page Dark Mode  ////*/
+
+.dark-mode-speciesheader {
+  color: white !important;
+}
+
+.dark-mode-specieslocation {
+  color: white !important;
+}
