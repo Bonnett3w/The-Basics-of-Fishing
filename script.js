@@ -40,8 +40,8 @@ swim()
 //Linking buttons to next and previous pages//
 
 const navMap = {
-  "homepage.html": { next: "tackle.html", prev: null },
-  "tackle.html":   { next: "locations.html", prev: "homepage.html" },
+  "inedx.html": { next: "tackle.html", prev: null },
+  "tackle.html":   { next: "locations.html", prev: "index.html" },
   "locations.html":{ next: "species.html", prev: "tackle.html" },
   "species.html":  { next: null, prev: "locations.html" }
 };
