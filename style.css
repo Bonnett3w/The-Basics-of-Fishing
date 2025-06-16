@@ -423,7 +423,7 @@ h1,h2 {
 .hidden-flounder,
 .hidden-swordfish,
 .hidden-mahi {
-  display: none !important;
+  display: none;
 }
 
 
